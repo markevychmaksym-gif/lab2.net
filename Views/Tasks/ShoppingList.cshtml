@@ -1,0 +1,11 @@
+﻿@model Dictionary<string, int>
+
+<h2>Shopping List</h2>
+<ul>
+    @foreach (var item in Model)
+    {
+        <li>@item.Key — @item.Value pcs</li>
+    }
+</ul>
+
+@await Html.PartialAsync("TimeToBuy")

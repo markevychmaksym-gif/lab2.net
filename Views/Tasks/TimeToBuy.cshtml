@@ -1,0 +1,3 @@
+﻿@inject lab2.Services.ITimeService timeService
+
+<p><b>Time to buy:</b> @timeService.GetTimeForTomorrow().ToShortTimeString() tomorrow</p>

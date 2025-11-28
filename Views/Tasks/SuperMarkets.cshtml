@@ -1,0 +1,13 @@
+﻿@{
+    var markets = ViewBag.SuperMarkets as List<string>;
+}
+
+<h2>SuperMarkets</h2>
+<ul>
+    @foreach (var m in markets)
+    {
+        <li>@m</li>
+    }
+</ul>
+
+<p>Total: @markets.Count supermarkets</p>
